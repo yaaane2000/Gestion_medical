@@ -1,0 +1,43 @@
+unit MENU;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.ImageList,
+  Vcl.ImgList, Vcl.Menus, Vcl.ComCtrls, Vcl.ToolWin;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    Fichier1: TMenuItem;
+    Edition1: TMenuItem;
+    voir1: TMenuItem;
+    Outil1: TMenuItem;
+    Aide1: TMenuItem;
+    CheckBox6: TCheckBox;
+    CheckBox7: TCheckBox;
+    CheckBox8: TCheckBox;
+    CheckBox9: TCheckBox;
+    CheckBox10: TCheckBox;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+close;
+end;
+
+end.
